@@ -7,6 +7,7 @@ SlurmComposer is an intuitive web application designed to streamline the process
 
 Below is an outline of the folder structure for SlurmComposer:
 
+```
 SlurmComposer/
 │
 ├── frontend/             # Frontend part of the project
@@ -52,6 +53,7 @@ SlurmComposer/
 ├── CONTRIBUTING.md       # Contribution guidelines
 ├── LICENSE               # The license file
 └── docker-compose.yml    # Docker compose file (if using Docker)
+```
 
 Each directory has a specific role:
 
@@ -66,6 +68,7 @@ Each directory has a specific role:
 - `CONTRIBUTING.md`: Instructions and guidelines for contributors.
 - `LICENSE`: The legal license agreement for the project.
 - `docker-compose.yml`: Docker compose configuration for container orchestration (optional).
+
 
 
 ## Features
