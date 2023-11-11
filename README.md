@@ -1,11 +1,11 @@
-# SlurmComposer
+# SlurmCostManager
 
 ## Description
-SlurmComposer is an intuitive web application designed to streamline the process of generating Slurm job submission scripts. By parsing Slurm configuration files, it provides a user-friendly interface to help users efficiently craft scripts, optimizing the use of available HPC resources.
+SlurmCostManager is a comprehensive web application designed to facilitate the accounting and billing of HPC resources in Slurm-managed environments. This tool simplifies the process of tracking resource usage and calculating costs, providing research institutions with a robust and user-friendly interface for managing their HPC expenditures.
 
 ## Project Structure
 
-Below is an outline of the folder structure for SlurmComposer:
+Below is an outline of the folder structure for SlurmCostManager:
 
 ```
 SlurmComposer/
@@ -57,7 +57,7 @@ SlurmComposer/
 
 Each directory has a specific role:
 
-- `frontend/`: Contains all the source code for the user interface of the application.
+- `frontend/`: Contains all the source code for the application's user interface.
 - `backend/`: Houses the server-side code, including APIs, business logic, and database models.
 - `config/`: Configuration settings for different deployment environments.
 - `scripts/`: Includes scripts for database migration, deployment, and other utilities.
@@ -72,16 +72,17 @@ Each directory has a specific role:
 
 
 ## Features
-- Parse Slurm configuration files to extract cluster details
-- Interactive UI for crafting Slurm job submission scripts
-- Support for various node types and partition configurations
-- Exportable script generation for immediate use
-- User authentication and saved configurations (TBD)
+- Seamless integration with Slurm for real-time data fetching
+- Intuitive UI for monitoring and managing HPC resource usage
+- Detailed cost calculation based on user-defined parameters
+- Automated invoice generation for resource usage
+- Detailed reports and analytics for usage insights
+- Secure user authentication and role-based access control
 
 ## Tech Stack
 - Frontend: React.js / Vue.js with Tailwind CSS / Bootstrap
 - Backend: Node.js with Express.js
-- Database: MongoDB / PostgreSQL
+- Database: MongoDB / PostgreSQL for storing usage and billing data
 - DevOps: Docker, GitHub Actions for CI/CD
 
 ## Installation
@@ -109,7 +110,7 @@ cd backend
 yarn install # or npm install
 yarn dev # or npm run dev
 
-This will start the backend server, which by default will run on `http://localhost:5000`.
+This will start the backend server, which will run on `http://localhost:5000` by default.
 
 ### Environment Variables
 Set up the necessary environment variables in a `.env` file at the root of your backend project:
@@ -118,7 +119,7 @@ DATABASE_URL=mongodb://localhost/slurmcomposer
 SESSION_SECRET=your-session-secret
 
 
-Replace `mongodb://localhost/slurmcomposer` with your database connection string.
+Replace `mongodb://localhost/SlurmCostManager` with your database connection string.
 
 ### Running Tests
 To run the test suite:
@@ -137,10 +138,10 @@ This command builds the images and starts the containers defined in `docker-comp
 
 ## Deployment
 
-For deployment, you can use services like Heroku, DigitalOcean, AWS, or any other cloud provider.
+You can use services like Heroku, DigitalOcean, AWS, or any other cloud provider for deployment.
 
 ### Heroku Deployment
-heroku create slurmcomposer
+heroku create SlurmCostManager
 git push heroku main
 heroku open
 
@@ -158,7 +159,7 @@ We welcome contributions! Please read `CONTRIBUTING.md` for details on our code 
 This project is licensed under the GNU General Public License version 3 - see the `LICENSE` file for details.
 
 ## Acknowledgments
-- Slurm Project
-- Contributors and maintainers of the used open-source packages
+- Slurm Project for providing the base HPC management system.
+- Contributors and maintainers of the used open-source packages.
 
 
