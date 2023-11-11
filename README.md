@@ -1,7 +1,7 @@
 # SlurmCostManager
 
 ## Description
-SlurmCostManager is a comprehensive web application designed to facilitate the accounting and billing of HPC resources in Slurm-managed environments. This tool simplifies the process of tracking resource usage and calculating costs, providing research institutions with a robust and user-friendly interface for managing their HPC expenditures.
+SlurmCostManager is a comprehensive web application that facilitates the accounting and billing of HPC resources in Slurm-managed environments. This tool simplifies the process of tracking resource usage and calculating costs, providing research institutions with a robust and user-friendly interface for managing their HPC expenditures.
 
 ## Project Structure
 
@@ -94,9 +94,8 @@ Each directory has a specific role:
 - MongoDB or PostgreSQL (depending on your choice)
 
 ### Cloning the Repository
-git clone https://github.com/yourusername/SlurmComposer.git
-cd SlurmComposer
-
+git clone https://github.com/NessieCanCode/SlurmCostManager.git
+cd SlurmCostManager
 
 ### Frontend Setup
 cd frontend
@@ -115,7 +114,7 @@ This will start the backend server, which will run on `http://localhost:5000` by
 ### Environment Variables
 Set up the necessary environment variables in a `.env` file at the root of your backend project:
 
-DATABASE_URL=mongodb://localhost/slurmcomposer
+DATABASE_URL=mongodb://localhost/SlurmCostManager
 SESSION_SECRET=your-session-secret
 
 
